@@ -1,3 +1,21 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -8,10 +26,6 @@
     grid-column-start: 2;
     grid-column-end: 3;
     background:yellow;
-}
-
-.container img {
-    width:100%;
 }
 
 .containerrow2 {
@@ -28,6 +42,17 @@
 .albumimg {
     grid-column: 5 / 6;
 }
+
+.containerrow3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: blue;
+}
+
+.albumcoverleft1 {
+    grid-column: 2;
+}
+
 
 
 
