@@ -28,13 +28,12 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background-color: red;
+    margin: 5%;
 }
 
 .albumcoverleft {
     grid-column-start: 2;
     grid-column-end: 3;
-    background:yellow;
 }
 
 .infoleft {
@@ -45,7 +44,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-row-start: 2;
-    background:green;
+    margin: 5%;
 }
 
 .inforight {
@@ -63,13 +62,19 @@ body {
 .containerrow3 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    background: blue;
+    margin: 5%;
 }
 
 .albumcoverleft1 {
     grid-column: 2;
 }
 
+
+.containerrow4 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 5%;
+}
 
 
 
