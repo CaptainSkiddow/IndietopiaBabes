@@ -29,6 +29,15 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 5%;
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.container.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .albumcoverleft {
@@ -45,6 +54,15 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-row-start: 2;
     margin: 5%;
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.containerrow2.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .inforight {
@@ -63,6 +81,15 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 5%;
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0%;
+    transition: 1s all ease;
+}
+
+.containerrow3.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .albumcoverleft1 {
@@ -74,6 +101,15 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 5%;
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0%;
+    transition: 1s all ease;
+}
+
+.containerrow4.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
