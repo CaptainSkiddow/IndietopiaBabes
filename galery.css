@@ -23,9 +23,78 @@ body {
 
 
 
-
+.loss {
+    height: 100vh;
+}
 
 .container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 5%;
+    position: relative;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+
+.albumcoverleft {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.infoleft {
+    grid-column: 3/5;
+}
+
+.containerrow2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-start: 2;
+    margin: 5%;
+    position: relative;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+.inforight {
+    grid-column: 3 / 5;
+}
+
+.inforight h1 {
+    justify-self: end;
+}
+
+.albumimg {
+    grid-column: 5 / 6;
+}
+
+.containerrow3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 5%;
+    position: relative;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+
+.albumcoverleft1 {
+    grid-column: 2;
+}
+
+
+.containerrow4 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 5%;
+    position: relative;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+
+
+/* .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin: 5%;
@@ -110,8 +179,6 @@ body {
 .containerrow4.active {
     transform: translateX(0);
     opacity: 1;
-}
-
-
+} */
 
 

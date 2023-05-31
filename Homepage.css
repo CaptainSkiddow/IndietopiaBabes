@@ -1,2 +1,23 @@
-/* Ah goeie /*
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.Test {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Test2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abel';
+    font-size: 40px;
+    font-weight: bold;
+}
 
