@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 gsap.from(".container", {
-    duration: 0.1,
+    duration: 0.05,
     x: -200,
     opacity: 0,
     scrollTrigger: {
@@ -17,7 +17,7 @@ gsap.from(".container", {
 
 
   gsap.from(".containerrow2", {
-    duration: 0.1,
+    duration: 0.05,
     x: 200,
     opacity: 0,
     scrollTrigger: {
@@ -31,7 +31,7 @@ gsap.from(".container", {
   })
 
   gsap.from(".containerrow3", {
-    duration: 0.1,
+    duration: 0.05,
     x: -200,
     opacity: 0,
     scrollTrigger: {
@@ -45,7 +45,7 @@ gsap.from(".container", {
   })
 
   gsap.from(".containerrow4", {
-    duration: 0.1,
+    duration: 0.05,
     x: 200,
     opacity: 0,
     scrollTrigger: {
