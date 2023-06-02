@@ -1,0 +1,63 @@
+body {
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+section {
+
+    height: 100vh;
+    text-align: center;
+
+}
+
+.box {
+
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.dark {
+
+    text-align: left;
+    background: rgb(44, 44, 44);
+    color: white;
+    position: relative;
+}
+
+.content {
+
+    padding: 5em 9em;
+    z-index: 1;
+    position: relative;
+}
+
+h2 {
+
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+p {
+
+    font-size: 1.6em;
+}
+
+img {
+
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+}
+
+.dark {
+
+    overflow: hidden;
+}
