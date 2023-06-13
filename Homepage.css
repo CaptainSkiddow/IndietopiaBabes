@@ -73,6 +73,11 @@ h2 {
   position: absolute;
 }
 
+.video_section video {
+  position: absolute;
+  top: 0;
+}
+
 .delays {
   height: 600vh;
 }
