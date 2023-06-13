@@ -5,7 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link rel="stylesheet" href="Homepage.css" />
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+    ></script>
     <link rel="stylesheet" href="Homepage.css">
+    <script defer src="script.js"></script>
   </head>
 
 
@@ -22,8 +37,24 @@
             </ul>
         </nav>
     </header>
-
-
+  <body>
+    <div id="parallax_hero">
+      <div class="par_front_img" data-depth="0.7">
+        <img src="/images/ede_staal.png" />
+      </div>
+      <div class="par_text" data-depth="0.35">
+        <p>
+          EDE <br />
+          STAAL
+        </p>
+      </div>
+      <div class="par_back_img" data-depth="0.050">
+        <img src="images/ede_staal_background.png" />
+      </div>
+    </div>
+    
+    
+    
     <div class="introContainer">
         <h1>
             VR-Beleving
@@ -44,6 +75,78 @@
 
     </div>
 
+    <section class="zoom_out">
+      <img src="images/vr-bril.png" alt="" />
+    </section>
+    <section class="video_section">
+      <video
+        controls
+        autoplay
+        muted
+        src="/videos/ede_staal_trailer.mp4"
+      ></video>
+    </section>
+
+    <section class="delays">
+      <div id="del1" class="delayed-section" data-scrub="0.9">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=1" alt="" />
+        </div>
+      </div>
+      <div id="del2" class="delayed-section" data-scrub="0.5">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=2" alt="" />
+        </div>
+      </div>
+      <div id="del3" class="delayed-section" data-scrub="0.1">
+        <div class="inner-container">
+          <p class="text">EDE STAAL</p>
+        </div>
+      </div>
+
+      <div id="del4" class="delayed-section" data-scrub="0.9">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=3" alt="" />
+        </div>
+      </div>
+
+      <div id="del5" class="delayed-section" data-scrub="0.6">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=4" alt="" />
+        </div>
+      </div>
+
+      <div id="del6" class="delayed-section" data-scrub="0.4">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=5" alt="" />
+        </div>
+      </div>
+
+      <div id="del7" class="delayed-section" data-scrub="0">
+        <div class="innerContainer">
+          <p class="text">GRONINGEN</p>
+        </div>
+      </div>
+
+      <div id="del8" class="delayed-section" data-scrub="0.6">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=6" alt="" />
+        </div>
+      </div>
+
+      <div id="del9" class="delayed-section" data-scrub="0.9">
+        <div class="innerContainer">
+          <img src="https://picsum.photos/575/745?index=7" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+    ></script>
 
 </body>
 
