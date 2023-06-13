@@ -145,6 +145,7 @@ h2 {
 
 .delayed-section img:hover {
   filter: grayscale(0);
+}
   
 li, a, button{
     font-weight: 500;
@@ -164,6 +165,7 @@ li, a, button{
 #del1 {
   left: 50%;
   top: 20%;
+}
   
 header{
     display: flex;
@@ -214,6 +216,7 @@ header{
   left: 20%;
   top: 75%;
 }
+
 header input[type=text] {
     float: right;
     border: none;
