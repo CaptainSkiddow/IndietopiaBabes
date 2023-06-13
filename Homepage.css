@@ -90,6 +90,12 @@ h2 {
   max-width: 100%;
   will-change: transform;
   object-fit: cover;
+  filter: grayscale(1);
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.delayed-section img:hover {
+  filter: grayscale(0);
 }
 
 .delayed-section p {
@@ -113,4 +119,34 @@ h2 {
   left: 25%;
   top: 25%;
   z-index: 2;
+}
+
+#del4 {
+  left: 40%;
+  top: 40%;
+}
+
+#del5 {
+  left: 13%;
+  top: 50%;
+}
+
+#del6 {
+  left: 45%;
+  top: 65%;
+}
+
+#del7 {
+  left: 45%;
+  top: 45%;
+}
+
+#del8 {
+  left: 55%;
+  top: 80%;
+}
+
+#del9 {
+  left: 20%;
+  top: 75%;
 }
