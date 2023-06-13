@@ -22,7 +22,7 @@ options: {
     width: windowWidth,
     height: windowHeight,
     wireframes: false,
-    background: 'none'
+    background: 'transparent'
 }
 });
 
@@ -123,6 +123,9 @@ var mouse = Mouse.create(render.canvas);
 var mouseConstraint = MouseConstraint.create(engine, {
 mouse: mouse
 });
+
+mouseConstraint.mouse.element.removeEventListener("mousewheel", mouseConstraint.mouse.mousewheel);
+mouseConstraint.mouse.element.removeEventListener("DOMMouseScroll", mouseConstraint.mouse.mousewheel);
 
 World.add(engine.world, mouseConstraint);
 
