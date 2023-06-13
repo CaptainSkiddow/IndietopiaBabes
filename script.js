@@ -21,7 +21,7 @@ options: {
     width: windowWidth,
     height: windowHeight,
     wireframes: false,
-    background: 'linear-gradient(180deg, rgba(219,219,219,1) 0%, rgba(185,185,185,1) 35%, rgba(59,59,59,1) 100%)'
+    background: 'none'
 }
 });
 
