@@ -1,3 +1,39 @@
+// Get all the anchor elements inside the navbar
+var navbarLinks = document.querySelectorAll("#navbar a");
+
+// Add click event listeners to each link
+navbarLinks.forEach(function(link) {
+  link.addEventListener("click", function() {
+    // Remove the 'active' class from all links
+    navbarLinks.forEach(function(link) {
+      link.classList.remove("active");
+    });
+
+    // Add the 'active' class to the clicked link
+    this.classList.add("active");
+  });
+});
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {
+  myFunction();
+};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 
 // Module aliases
 var Engine = Matter.Engine,
@@ -167,7 +203,7 @@ gsap.to(".zoom_out img", {
     trigger: ".zoom_out",
     pin: true,
     scrub: 1,
-    markers: true,
+    markers: false,
     preventOverlaps: true,
   },
 });
@@ -197,7 +233,7 @@ delSections.forEach((section) => {
       start: "top bottom",
       end: "bottom top",
       onUpdate: (self) => progressTo(self.progress),
-      markers: true,
+      markers: false,
     },
   });
 });

@@ -20,7 +20,7 @@
 
 <body>
 
-  <header>
+  <!-- <header>
     <h1 class="logo">Indietopia</h1>
     <nav>
       <ul class="nav__links">
@@ -30,7 +30,7 @@
         <input type="text" placeholder="Search..">
       </ul>
     </nav>
-  </header>
+  </header> -->
 
   <body>
     <div id="parallax_hero">
@@ -48,9 +48,14 @@
       </div>
     </div>
 
+    <div id="navbar">
+      <a class="active" href="#introContainer">VR-beleving</a> 
+      <a href="#video_section">Video</a> 
+      <a href="#del2">Foto's</a> 
+      <a href="#matter-container">LP animaties</a>
+    </div>
 
-
-  <div class="introContainer">
+  <div id="introContainer">
     <h1>
       VR-Beleving
     </h1>
@@ -62,7 +67,7 @@
       zingt.
     </p>
   </div>
-  <div class="introImgContainer">
+  <div id="introImgContainer">
 
     <img src="imgintro/MicrosoftTeams-image (6).png">
     <img src="imgintro/MicrosoftTeams-image (8).png">
@@ -73,11 +78,11 @@
   <section class="zoom_out">
     <img src="images/vr-bril.png" alt="" />
   </section>
-  <section class="video_section">
-    <video controls autoplay muted src="/videos/ede_staal_trailer.mp4"></video>
+  <section id="video_section">
+    <video controls autoplay muted width="100%" src="/videos/ede_staal_trailer.mp4"></video>
   </section>
 
-  <section class="delays">
+  <section id="delays">
     <div id="del1" class="delayed-section" data-scrub="0.9">
       <div class="innerContainer">
         <img src="https://picsum.photos/575/745?index=1" alt="" />
