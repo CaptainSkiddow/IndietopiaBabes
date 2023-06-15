@@ -90,6 +90,7 @@ Matter code
   align-items: center;
   flex-direction: column;
   margin: 1rem 35rem;
+
   text-align: center;
   padding-top: 50px;
 }
@@ -187,6 +188,7 @@ section {
   overflow: hidden;
   position: relative;
 }
+
 
 h2 {
   text-align: center;
