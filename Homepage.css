@@ -2,7 +2,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
  
+html {
 
+  scroll-behavior: smooth;
+}
 #matter-container {
     width: 100%;
     height: 100vh;
@@ -24,11 +27,62 @@
     z-index: -1;
   }
 
+  /* Style the navbar */
+/* Style the navigation menu */
+#navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  z-index: 10;
+}
+
+/* Navigation links */
+#navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+#navbar a:hover {
+  background-color: #000;
+  transition: ease 0.3s;
+}
+
+/* Style the current/active link */
+#navbar a.active {
+  background-color: #aaaaaa;
+}
+
+
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+
 /*
 Matter code
 */
 
-.introContainer {
+#introContainer {
   font-family: "Inter", sans-serif;
   color: white;
   display: flex;
@@ -36,18 +90,21 @@ Matter code
   align-items: center;
   flex-direction: column;
   margin: 1rem 35rem;
+
+  text-align: center;
+  padding-top: 50px;
 }
 
-.introContainer h1 {
+#introContainer h1 {
   font-size: 96px;
   font-weight: bold;
 }
 
-.introContainer p {
+#introContainer p {
   font-size: 28px;
 }
 
-.introImgContainer {
+#introImgContainer {
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -58,7 +115,7 @@ Matter code
   padding: 2rem;
 }
 
-.introImgContainer img {
+#introImgContainer img {
   width: auto;
   max-height: 350px;
 }
@@ -186,7 +243,7 @@ h2 {
   position: absolute;
 }
 
-.delays {
+#delays {
   height: 600vh;
 }
 
@@ -216,6 +273,7 @@ h2 {
   font-size: 10rem;
   color: white;
   font-weight: 700;
+  line-height: 150px;
 }
 
 #del1 {
@@ -270,3 +328,4 @@ header input[type="text"] {
   font-size: 17px;
   border: 1px solid black;
 }
+
