@@ -329,3 +329,18 @@ header input[type="text"] {
   border: 1px solid black;
 }
 
+
+.end_choiceContainer {
+  display: flex;
+  width: 100%;
+
+}
+
+.image_overlay {
+  color: white;
+  position: absolute;
+}
+
+.end_choice_left {
+  position: relative;
+}
